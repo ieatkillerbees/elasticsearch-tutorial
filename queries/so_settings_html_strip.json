@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "html_strip": {
+          "tokenizer": "standard",
+          "char_filter": [
+            "html_strip"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "post": {
+      "properties": {
+        "answers": {
+          "type": "long"
+        },
+        "body": {
+          "type": "string",
+          "analyzer": "html_strip"
+        },
+        "comments": {
+          "type": "long"
+        },
+        "created": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "parent": {
+          "type": "string"
+        },
+        "post_type": {
+          "type": "string"
+        },
+        "score": {
+          "type": "long"
+        },
+        "tags": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "string"
+        },
+        "views": {
+          "type": "long"
+        }
+      }
+    }
+  }
+}

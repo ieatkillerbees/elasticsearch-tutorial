@@ -1,0 +1,13 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "PHP"        }},
+        { "match": { "body": "SoapClient" }}
+      ],
+      "filter": [
+        { "term":  { "post_type": "question" }}
+      ]
+    }
+  }
+}

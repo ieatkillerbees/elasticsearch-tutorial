@@ -1,0 +1,16 @@
+{
+  "id": "33458069",
+  "answers": null,
+  "created": "2015-11-01 00:34:18",
+  "post_type": "Answer",
+  "score": 2,
+  "comments": 1,
+  "body": "<p>I am also using less with css modules, but I don't think they way you are using the '&amp;' fits with the goal of css modules. From my understanding 'composes' is more analogous to @import than &amp;, and I only find myself using the &amp; for psuedo-classes. </p>\n\n<p>You can definitely do things the way you have here, but don't you find it a bit strange that you have to specify both the 'common' and 'normal' classes in the HTML? Much better in my opinion to just specify 'normal', and let normal inherit the shared styles using 'compose'.</p>\n",
+  "url": "http://stackoverflow.com/a/33458069/",
+  "parent": "33447277",
+  "user_id": "387203",
+  "deleted": null,
+  "tags": [],
+  "title": null,
+  "views": null
+}

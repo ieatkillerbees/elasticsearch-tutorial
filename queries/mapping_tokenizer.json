@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "analysis": {
+      "char_filter": {
+        "test_mapping": {
+          "type": "mapping",
+          "mappings": [ "ph=>f" ]
+        }
+      },
+      "analyzer": {
+        "custom_mapping": {
+          "tokenizer": "standard",
+          "char_filter": [ "test_mapping" ]
+        }
+      }
+    }
+  }
+}
+

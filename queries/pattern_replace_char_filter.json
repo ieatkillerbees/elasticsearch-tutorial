@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "analysis": {
+      "char_filter": {
+        "my_pattern": {
+          "type": "pattern_replace",
+          "pattern": "sample(.*)",
+          "replacement": "replacedSample $1"
+        }
+      },
+      "analyzer": {
+        "custom_with_char_filter": {
+          "tokenizer": "standard",
+          "char_filter": [
+            "my_pattern"
+          ]
+        }
+      }
+    }
+  }
+}

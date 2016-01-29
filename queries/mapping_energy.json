@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "reading": {
+      "properties": {
+        "date": {
+          "type":   "date",
+          "format": "dd/MM/yyyy"
+        }
+      }
+    }
+  }
+}
